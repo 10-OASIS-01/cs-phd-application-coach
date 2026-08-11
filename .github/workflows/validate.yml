@@ -1,0 +1,24 @@
+name: Validate Skill
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate package structure
+        run: python3 scripts/validate_skill.py
+      - name: Compile scripts
+        run: python3 -m py_compile scripts/*.py
+      - name: Test workspace automation
+        run: python3 -m unittest discover -s tests -v
