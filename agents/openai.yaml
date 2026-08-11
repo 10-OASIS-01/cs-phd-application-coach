@@ -1,0 +1,4 @@
+interface:
+  display_name: "CS PhD Application Coach"
+  short_description: "Plan, write, track, and evaluate PhD applications"
+  default_prompt: "Use $cs-phd-application-coach to assess my profile and build a verified PhD application plan."

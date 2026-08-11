@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>PhD Application Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <div><strong>Application OS</strong><small>Local workspace</small></div>
+        </div>
+        <nav id="navigation" aria-label="Application sections"></nav>
+        <div class="privacy-note">
+          <span class="status-dot" aria-hidden="true"></span>
+          <div><strong>Private by default</strong><small>Saved only in this folder</small></div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="eyebrow">APPLICATION CYCLE</p>
+            <h1 id="page-title">Overview</h1>
+            <p id="page-description">See deadlines, materials, and risks in one place.</p>
+          </div>
+          <div class="topbar-actions">
+            <span id="save-status" role="status" aria-live="polite">Ready</span>
+            <button id="primary-action" class="button primary" type="button" hidden>Add record</button>
+          </div>
+        </header>
+
+        <section id="content" class="content" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <dialog id="record-dialog">
+      <form method="dialog" id="record-form">
+        <div class="dialog-head">
+          <div><p class="eyebrow">LOCAL RECORD</p><h2 id="dialog-title">Add record</h2></div>
+          <button class="icon-button" value="cancel" aria-label="Close">×</button>
+        </div>
+        <div id="record-fields" class="form-grid"></div>
+        <div class="dialog-actions">
+          <button class="button" value="cancel" type="button" id="cancel-dialog">Cancel</button>
+          <button class="button primary" type="submit">Save record</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
