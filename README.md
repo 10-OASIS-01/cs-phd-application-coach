@@ -4,7 +4,7 @@ An open, access-conscious Agent Skill for planning, writing, tracking, and evalu
 
 The coach treats admission as a noisy matching process—not a ranking of human worth or research potential. It helps applicants make research evidence legible, find programs and advisors by substantive fit, verify current requirements, manage materials and letters, prepare for interviews, compare offers, and protect their wellbeing throughout the cycle.
 
-[Project page](https://10-oasis-01.github.io/skills/cs-phd-application-coach/) · [Full application guide](https://10-oasis-01.github.io/blog/the-hidden-curriculum-of-cs-phd-applications/)
+[Project page](https://10-oasis-01.github.io/cs-phd-application-coach/) · [Full application guide](https://10-oasis-01.github.io/blog/the-hidden-curriculum-of-cs-phd-applications/)
 
 ## What is included
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://10-oasis-01.github.io/cs-phd-application-coach/sitemap.xml
